@@ -1,0 +1,110 @@
+ 
+.caroHome {
+    margin-top: 1vmax;
+    width: 100%;
+    height: 25vmax;
+    text-align: center;
+}
+
+
+
+.homeHeading {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4vmax;
+    padding: 1vmax;
+    margin: 3vmax auto;
+    border-bottom: 1px solid rgba(200, 195, 195, 0.675);
+    width: 20vmax;
+}
+
+.container {
+    background-color: rgb(253, 253, 255);
+    display: flex;
+    margin: 2vmax auto;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.productCard {
+    background-color: #fff;
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(60, 53, 53);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+}
+
+.productCard>img {
+    width: 14vmax;
+}
+
+.productCard>div {
+    margin: 0.5vmax;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-size: 1vmax;
+}
+
+.producCardSpan {
+    margin: 0.5vmax;
+    font-size: 300 0.7vmax 'Times New Roman', Times, serif;
+}
+
+
+.productCard>p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+}
+
+.productCard>span {
+    margin: 0.5vmax;
+    color: rgb(2, 167, 76);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+    transform: translateY(-1vmax);
+}
+
+
+@media screen and (max-width: 656px) {
+
+    .caroHome {
+        margin-top: 1vmax;
+        width: 100%;
+        height: 20vmax;
+        text-align: center;
+    }
+
+    .productCard>p {
+        font-size: 1.7vmax;
+    }
+
+    .productCard>div {
+        margin: 0vmax;
+        display: block;
+        font-size: 2vmax;
+    }
+
+    .productCard>span {
+        font-size: 1.5vmax;
+    }
+
+    .productCard>div>span {
+        margin: 0 0.5vmax;
+        font-size: 300 0.1vmax "Roboto";
+    }
+
+}
