@@ -36,6 +36,8 @@ import UpdateUser from './components/Admin/UpdateUser';
 import ProductReviews from './components/Admin/ProductReviews';
 import NotFound from './components/layout/Not Found/NotFound';
 import StripePayment from './components/Cart/StripePayment';
+import About from './components/layout/About/About';
+import Contact from './components/layout/Contact/Contact';
 
 const App = () => {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -50,7 +52,7 @@ const App = () => {
     });
 
     store.dispatch(loadUser());
-     
+
 
   }, []);
 
@@ -60,7 +62,7 @@ const App = () => {
         <Header />
         {isAuthenticated && <UserOptions user={user} />}
 
-      
+
 
         <Routes>
 
@@ -94,7 +96,7 @@ const App = () => {
 
 
           <Route path='/order/confirm' element={<ProtectedRoute component={ConfirmOrder} />} />
-          {/* <Route  path='/process/payment' element={<ProtectedRoute component={Payment} />} /> */}
+         
 
           <Route path='/success' element={<ProtectedRoute component={OrderSuccess} />} />
 
@@ -102,7 +104,7 @@ const App = () => {
 
 
           <Route path='/orders/:id' element={<ProtectedRoute component={OrderDetails} />} />
-          {/* <Route  path='/order/:id' element={<OrderDetails/>} /> */}
+    
 
           <Route isAdmin={true} path='/admin/dashboard' element={<ProtectedRoute component={Dashboard} />} />
 
@@ -123,7 +125,9 @@ const App = () => {
 
           <Route isAdmin={true} path='/admin/reviews' element={<ProtectedRoute component={ProductReviews} />} />
           <Route path='/process/payment' element={<ProtectedRoute component={StripePayment} />} />
+          <Route path='/about' element={<ProtectedRoute component={About} />} />
 
+          <Route path='/contact' element={<ProtectedRoute component={Contact} />} />
 
           <Route
             element={

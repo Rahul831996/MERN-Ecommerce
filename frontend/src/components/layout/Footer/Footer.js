@@ -2,7 +2,10 @@ import React from 'react'
 import "./Footer.css";
 import playStore from "../../../images/playstore.png";
 import appStore from "../../../images/appstore.png";
-
+import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
 const Footer = () => {
   return (
     <footer id="footer">
@@ -22,10 +25,10 @@ const Footer = () => {
 
     <div className="rightFooter">
       <h4>Follow Us</h4>
-      <a href="http://instagram.com/techi_.rahul">Instagram</a>
-      <a href="http://instagram.com/rahulmargale96">Facebook</a>
-      <a href="http://twitter.com/margale_rahul">Twitter</a>
-      <a href="http://twitter.com/margale_rahul">Linkdien</a>
+      <a href="http://instagram.com/rahulthe_coder"><InstagramIcon/></a>
+      <a href="http://facebook.com/rahul.margale.585"><FacebookIcon/></a>
+      <a href="http://twitter.com/margale_rahul"><TwitterIcon/></a>
+      <a href="http://linkedin.com/rahul-margale-eng"><LinkedInIcon/></a>
     </div>
   </footer>
   )
