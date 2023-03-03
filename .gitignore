@@ -7,8 +7,7 @@
 # testing
 /frontend/coverage
 
-# production
-/frontend/build
+
 
 # misc
 /frontend/config/config.env
