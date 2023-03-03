@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const { default: isEmail } = require('validator/lib/isemail');
-const validate = require("validator");
 const bcryptjs = require("bcryptjs")
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
@@ -19,7 +17,6 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:[true,"please enter your email"],
         unique:true,
-        validate:[ isEmail,"please enter a valid email"],
     },
     password: {
         type:String,
