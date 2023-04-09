@@ -29,6 +29,7 @@ const NewProduct = () => {
   const [images, setImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
 
+  
   const categories = [
     "Laptop",
     "Footwear",

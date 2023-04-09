@@ -4,7 +4,6 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import { useDispatch, useSelector } from "react-redux";
 import { login,register,clearErrors } from '../../actions/userAction';
-import Loader from  "../layout/Loader/Loader";
 import FaceIcon from "@material-ui/icons/Face";
 import { useAlert } from "react-alert";
 import { useNavigate } from 'react-router-dom';
@@ -108,10 +107,7 @@ const LoginSignUp = () => {
 
   return (
     <Fragment>
-          {loading ? (
-        <Loader />
-      ) : (
-        <Fragment>
+
           <div className="LoginSignUpContainer">
             <div className="LoginSignUpBox">
               <div>
@@ -198,8 +194,6 @@ const LoginSignUp = () => {
               </form>
             </div>
           </div>
-        </Fragment>
-      )}
     </Fragment>
 
   )

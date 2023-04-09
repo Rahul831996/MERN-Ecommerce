@@ -35,6 +35,7 @@ const ProductDetails = () => {
         precision: 0.5,
     }
 
+    
     const [quantity,setQuantity] = useState(1);
     const [open,setOpen] = useState(false);
     const [rating,setRating] = useState(0);

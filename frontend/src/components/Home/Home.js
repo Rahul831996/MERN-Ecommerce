@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from 'react';
-import { CgMouse } from "react-icons/cg";
 import "./Home.css";
 import ProductCard from './ProductCard';
 import MetaData from '../layout/MetaData';
@@ -39,8 +38,8 @@ const Home = () => {
       ) : (
         <Fragment>
           <MetaData title="FECOMMERCE" />
-          <Carousel fullHeightHover={true}     // We want the nav buttons wrapper to only be as big as the button element is
-            navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+          <Carousel fullHeightHover={true}     
+            navButtonsProps={{          
               style: {
                 backgroundColor: 'cornflowerblue',
                 borderRadius: 0
@@ -52,15 +51,7 @@ const Home = () => {
             <img className='caroHome' src={banner4} alt="bn2" />
             <img className='caroHome' src={banner5} alt="bn2" />
           </Carousel>
-          {/* <div className='home_ui'>
       
-            <a href="#container">
-              <button id='btn'>
-                <CgMouse />
-              </button>
-            </a>
-          </div> */}
-
           <h2 className='homeHeading'>Featured Products</h2>
 
           <div className='container' id='container'>
